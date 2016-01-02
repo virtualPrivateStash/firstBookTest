@@ -1,0 +1,21 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                       controllers.Application.index
+
+# Home page
+GET     /index                  controllers.Application.index
+
+# UserPage - first implementation
+GET     /userProfileTest                          controllers.Application.userProfileTest
+
+# chatView - first implementation
+GET     /chatViewTest                          controllers.Application.chatViewTest
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+# chatView - first implementation
+GET     /viewUsersPictures                          controllers.Application.viewUsersPictures

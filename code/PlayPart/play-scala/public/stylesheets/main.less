@@ -1,0 +1,120 @@
+/*less-Variablen:*/
+
+@maxWindowWidth:        1600px;
+@minWindowWidth:        600px;
+@navigationWidth:       300px;
+@headerHeigth:          @navigationWidth;
+@navButtonHeight:       100px;
+@backgroundCol:         #e5f7ff;
+@backGroundColNav:      #50899D;
+/*@backGroundColNav:      #00aaff;*/
+@borderColor:           #000000;      
+@borderColor_backup:    #004466;      
+@borderSize:            5px;
+@fontColorStd:          #0000a1;
+@fontSizeStd:           14pt;
+@fontSizeLarge:         22pt;
+@testBorderSize:        5px;
+@testBorder:            @testBorderSize #C87E43 solid;
+@borderStd:             @borderSize @borderColor solid; 
+
+html{
+    padding:            0px;
+    box-sizing:         border-box;    
+}
+
+*, ::before, ::after { box-sizing: inherit; padding: inherit;}
+
+body{
+    margin:             0;
+    background-color:   @backgroundCol;
+    max-width:          @maxWindowWidth;
+    min-width:          600px;
+    min-height:         100%;
+    font-size:          @fontSizeStd;
+}
+
+.page{
+    border:             @testBorder;
+    border:             inherit;
+    position:           relative;
+}
+
+.header{
+    max-width:          @maxWindowWidth;
+    min-width:          @minWindowWidth;
+    max-height:         @headerHeigth;
+    min-height:         @headerHeigth;
+    background-position:center;
+    background:         url(../images/background/edited/digitalRegal_01_kleineKachel.jpg);
+    background-repeat: 	repeat;
+}
+
+.header_mainImg{
+    position:           absolute;
+    right:              0%;
+    clip: rect(0px,300px,300px,0px);
+    max-width:          @headerHeigth;
+    min-width:          @headerHeigth;
+    max-height:         @headerHeigth;
+    min-height:         @headerHeigth;
+}
+
+.contentPage{
+    position:           absolute;
+    left:               300px;
+}
+
+.contentElement{
+    width:              @maxWindowWidth - @navigationWidth - (2 * @testBorderSize);
+}
+
+
+a.button {
+    text-align: center;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    
+    min-width: 100%;
+}
+
+.button_nav{
+/*    min-width:          @headerHeigth - 2*@testBorderSize;
+    max-width:          @headerHeigth - 2*@testBorderSize;
+*/
+    width:              100%;
+    height:             @navButtonHeight;
+    font-size:          @fontSizeLarge;
+}
+
+.side-navigation{
+    
+    border:             inherit;
+    text-align:         center;
+    position:           absolute;
+    top:                0;
+    left:               0;
+    background-color:   @backGroundColNav;
+    width:              @navigationWidth;
+    min-height:         100%;
+    font-size:          @fontSizeLarge;
+}
+
+.posMiddle{
+    text-align:         center;
+    vertical-align:     middle;
+}
+
+h2{
+    font-size:          20pt;
+    margin-left:        7pt;
+}
+
+/* Ablage für Testzwecke: KOMMENTAR-AREA
+
+border:     @testBorder;
+*/

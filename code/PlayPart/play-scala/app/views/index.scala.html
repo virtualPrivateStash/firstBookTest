@@ -1,0 +1,38 @@
+@(title: String)
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>@title</title>
+    <!--<link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">-->
+    <link rel="stylesheet/less" type="text/css" media="screen" href="@routes.Assets.versioned("stylesheets/main.less")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+    <!-- less einbinden -->
+    <script src="@routes.Assets.versioned("javascripts/less.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header_mainImg">
+            <img src="@routes.Assets.versioned("images/headerFotos/edited/Buch_300_300.jpg")">
+        </div>
+    </div> <!--div header-->
+    <div class="page">
+        <div class="side-navigation">
+            <p class="posMiddle">NAVIGATION</p>
+            <button class="button_nav" type="button"><a href="/">Home</a></button> <br>
+            <button class="button_nav" type="button"><a href="/userProfileTest">Show User Profile</a></button> <br>
+            <button class="button_nav" type="button"><a href="chatViewTest">open Chat</a></button> <br>
+            <a href="/" class="button button_nav">Home</a><br>
+            <a href="/userProfileTest" class="button button_nav">Show User Profile</a><br>
+            <a href="/chatViewTest" class="button button_nav">Open Chat</a><br>
+            <a href="/viewUsersPictures" class="button button_nav">View User's Pictures</a><br>
+        </div> <!--div side-navigation-->
+    
+        <div class="contentElement">
+            <p>Dies ist die Seite userProfileTest</p>
+        </div> <!--div contentElement-->  
+    </div> <!--div pageElement-->  
+</body>
+</html>

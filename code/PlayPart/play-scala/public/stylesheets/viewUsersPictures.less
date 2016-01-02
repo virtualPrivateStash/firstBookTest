@@ -1,0 +1,91 @@
+/*less-Variablen:*/
+
+@maxWindowWidth:        1600px;
+@minWindowWidth:        600px;
+@sizeNavRechts:         25%;
+@navButtonHeight:       100px;
+@backgroundCol:         #e5f7ff;
+@backGroundColNav:      #50899D;
+@backGroundColDivs:     #777777;
+@backGroundColNavRight: green;
+@backGroundColrPanelElement:    #888888;    
+/*@backGroundColNav:      #00aaff;*/
+@borderColor:           #000000;      
+@borderColor_backup:    #004466;      
+@borderSize:            5px;
+@fontColorStd:          #0000a1;
+@fontSizeStd:           14pt;
+@fontSizeLarge:         22pt;
+@testBorderSize:        5px;
+@testBorder:            @testBorderSize red solid;
+@borderPanelRAfterImage:    @testBorderSize black solid;
+@borderDiv:             @borderPanelRAfterImage blue solid;
+@borderStd:             @borderSize @borderColor solid; 
+
+html{
+    box-sizing: border-box;    
+}
+
+*, ::before, ::after { box-sizing:  inherit; }
+
+body{
+    position:   relative;    
+    background-color:   @backgroundCol;
+    margin: 0;
+}
+
+.page{
+    position: relative;
+}
+
+.leftPage{
+    position: absolute;
+    width: 70%;
+    border: @borderDiv;
+    background-color: @backGroundColDivs;
+    
+}
+
+.panelPosRelative{
+    position: relative;
+}
+
+#rightPanel{
+    position: absolute;
+    left: 100% - @sizeNavRechts;
+    top: 0%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.rightPanel{
+    border: @borderDiv;
+    background-color: @backGroundColNavRight;    
+}
+
+.rightPanelAfterImage{
+    border: @borderPanelRAfterImage;
+}
+
+.rPanelElement{
+    position: absolute;
+    min-width: @sizeNavRechts;
+    max-width: @sizeNavRechts;
+    min-height: 30%;
+    height:     50%;
+    background-color: @backGroundColrPanelElement;
+    
+}
+
+.actionImage{
+    /*clip: rect(100px,100px,100px,100px); Zahlen vermutlich falsch*/
+    
+    width:  @sizeNavRechts;
+    height: @sizeNavRechts;
+    right: 0%;
+    top: 0%;
+}
+
+p{
+    font-size:  40pt;
+}

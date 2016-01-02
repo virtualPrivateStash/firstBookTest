@@ -1,0 +1,23 @@
+Schritte:
+
+- User anfertigen:
+
+		Vorname,
+		Nachname,
+		Alter,
+		Profilfoto,
+		Freunde,
+		Gruppen
+
+methoden:
+
+getter & setter
+		
+addFriend
+removeFriend
+addToGroup
+
+
+		
+		
+
