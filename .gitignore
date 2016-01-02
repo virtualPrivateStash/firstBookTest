@@ -1,0 +1,8 @@
+#ignore eclipse files:
+
+#ignore pictures:
+images_notGit/
+
+#ignore unknown automatically created files:
+code/.metadata
+code/.recommenders
