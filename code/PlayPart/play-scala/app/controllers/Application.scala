@@ -9,12 +9,12 @@ class Application extends Controller {
     Ok(views.html.index("OurBook"))
   }
   
-  def userProfileTest = Action {
-      Ok(views.html.userProfileTest("Showing userprofile"))
+  def userProfile = Action {
+      Ok(views.html.userProfile("Showing userprofile"))
   }
 
-  def chatViewTest = Action {
-      Ok(views.html.chatViewTest("Showing chatViewTest"))
+  def chatView = Action {
+      Ok(views.html.chatView("Showing chatViewTest"))
   }
 
   def viewUsersPictures= Action {
