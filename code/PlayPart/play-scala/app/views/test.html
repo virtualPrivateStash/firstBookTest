@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<title>Zugriff auf das DOM während dem Parsen des Dokuments</title>
+	<script	src="hWp://code.jquery.com/jquery-­‐1.10.1.min.js"></script>
+</head>
+<body>
+	<p id="bingo">hallo</p>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+		function funkiTest() {
+			alert("funkiTest");
+		}
+
+		function funkiTest2(argument) {
+			var zahl = parseInt(argument);
+			var i;			
+			for (i = 0; i < zahl; i++) {
+				alert("funkiTest" + (i+1));
+			}
+		}
+
+		var helloWorld = function() { print("hello world!") };
+		var twice = function(func) {
+			func(); func();
+		};
+
+		document.write("<p>Seite mittels JavaScript neu laden</p>");
+    	document.getElementById("bingo").innerHTML = "Have a nice day!";
+		document.write("<p>Biatch in the house</p>");
+		//setTimeout(function(){alert("hi")}, 2000);
+
+		for (i = 0; i < 3; i++) {
+			funkiTest()
+		}
+
+		funkiTest2("4")
+
+</script>
+
+<!--
+<script type="text/javascript">
+	var num1, num2, num3
+	num1 = prompt("Enter first number:")
+	num2 = prompt("Enter second number:")
+	sum = parseInt(num1) + parseInt(num2)
+	alert("Sum = " + sum) 
+</script> 
+-->
+

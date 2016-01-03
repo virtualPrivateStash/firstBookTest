@@ -11,6 +11,9 @@ GET     /index                  controllers.Application.index
 # UserPage - first implementation
 GET     /userProfile                          controllers.Application.userProfile
 
+# UserPage - first implementation
+GET     /editUserProfile                          controllers.Application.editUserProfile
+
 # chatView - first implementation
 GET     /chatView                          controllers.Application.chatView
 
